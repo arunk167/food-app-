@@ -10,9 +10,9 @@ export default function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        
+         {AuthStack(Stack)}
         {MainStack(Stack)}
-        {AuthStack(Stack)}
+       
       </Stack.Navigator>
     </NavigationContainer>
   );
