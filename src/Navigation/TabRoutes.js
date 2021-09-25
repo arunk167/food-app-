@@ -7,7 +7,7 @@ import navigationStrings from '../constants/navigationStrings';
 
 import colors from '../styles/colors';
 
-import { Cart, Home } from '../Screens';
+import { Account, Cart, Home } from '../Screens';
 import { moderateScale, textScale } from '../styles/responsiveSize';
 import {connect} from 'react-redux'
 
@@ -60,6 +60,25 @@ function TabRoutes(props) {
               }}
             />
             </>
+          ),
+        }}
+      />
+      
+      <Tab.Screen
+        name={navigationStrings.ACCOUNT}
+        component={Account}
+        options={{
+          tabBarIcon: ({focused, color, size}) => (
+            <Image
+              source={imagePath.cart}
+              style={{
+                position:'relative',
+                width: size,
+                height: size,
+                tintColor: focused ? colors.themeColor : colors.black,
+              }}
+            />
+          
           ),
         }}
       />

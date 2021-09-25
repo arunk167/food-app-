@@ -19,6 +19,7 @@ export default {
   minus:require('../assets/images/minus.png'),
   home:require('../assets/images/home.png'),
   cart:require('../assets/images/cart.png'),
+  emptyCart:require('../assets/images/emptyCart.png'),
 
  
   

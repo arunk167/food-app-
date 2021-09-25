@@ -7,8 +7,10 @@ import {
   ImageBackground,
   Image,
   TouchableOpacity,
+  ScrollView,
   useNavigation
 } from 'react-native';
+import ContentLoader1 from '../../Components/ContentLoader';
 import RoundImage from '../../Components/RoundImage';
 import SearchBar from '../../Components/SearchBar';
 import WrapperContainer from '../../Components/WrapperContainer';
@@ -111,12 +113,15 @@ const Home = ({navigation}) => {
   };
   return (
     <WrapperContainer style={{flex:1}}>
-      <View >
+      <ScrollView style={{flex:1}} >
         <Text style={styles.headerText}>What would you like to eat ?</Text>
         <SearchBar
           placeholder={'Search'}
           containerStyle={styles.containerStyle}
         />
+      <View>
+   
+      </View>
         <View style={{marginVertical: moderateScaleVertical(12)}}>
           <FlatList
             horizontal
@@ -143,11 +148,14 @@ const Home = ({navigation}) => {
             showsHorizontalScrollIndicator={false}
             ItemSeparatorComponent={() => {
               return <View style={{width: 6}} />;
+            
             }}
           />
+           <View  style={{height:25}}/>
         </View>
-        
-      </View>
+       
+       
+      </ScrollView>
     </WrapperContainer>
   );
 };

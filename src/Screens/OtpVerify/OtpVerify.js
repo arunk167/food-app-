@@ -58,7 +58,7 @@ const OtpVerify = (props) => {
   });
 
  const onMove=()=>{
-      navigation.navigate(navigationStrings.HOME)
+      navigation.navigate(navigationStrings.TAB_ROUTES )
  }  
   const {timer} = state;
   return (

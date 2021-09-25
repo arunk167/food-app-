@@ -10,6 +10,7 @@ export default {
   DELIVERY: 'delivery',
   DETAIL_PAGE:"detail_page",
   CART:"cart",
+  ACCOUNT:'account'
  
   
  

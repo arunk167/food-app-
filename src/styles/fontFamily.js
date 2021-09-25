@@ -9,6 +9,6 @@ export default {
     futura:"Futura-Normal",
     semiBold:"SFProText-SemiBold"
 }
-
+ 
 
 

@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {connect} from 'react-redux';
+import EmptyPage from '../../Components/EmptyPage';
 import Header from '../../Components/Header';
 import imagePath from '../../constants/imagePath';
 import strings from '../../constants/lang';
@@ -99,7 +100,17 @@ const Cart = props => {
   return (
     <View style={{flex: 1}}>
       <Header centerTitle={strings.CART} />
-      <FlatList data={cartItems} renderItem={_renderItem} />
+     
+     <FlatList data={cartItems} renderItem={_renderItem}  ListEmptyComponent={
+        ()=>{
+          return (
+           
+              <EmptyPage text={"Empty Cart"} image={imagePath.emptyCart} />
+             
+          )
+        }
+      }/>
+ 
     </View>
   );
 };

@@ -18,6 +18,7 @@ export default function (Stack) {
         component={DetailPage}
         options={{headerShown: false}}
       />
+      
      
      
 
